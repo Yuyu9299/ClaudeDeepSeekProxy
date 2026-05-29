@@ -1,0 +1,10 @@
+# .NET
+bin/
+obj/
+*.user
+*.suo
+.vs/
+
+# 临时文件
+*.tmp
+%TEMP%/
