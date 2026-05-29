@@ -1,8 +1,26 @@
 # ClaudeDeepSeekProxy
 
-> ⚠️ **临时解决方案**：这是一个社区自制的桥接工具，用于在官方适配之前让 Claude Code 与 DeepSeek API 正常通信。如果你不想折腾，可以选择等待 Claude Code 或 DeepSeek 官方的后续更新。喜欢动手的话，往下看 👇
+> 🎉 **好消息！本项目已功成身退。**
+>
+> DeepSeek 官方已正式支持 Claude Code 集成，`system` 消息限制已解决。你现在可以直接直连使用，无需再跑本地代理。详见 [DeepSeek 官方文档](https://api-docs.deepseek.com/zh-cn/quick_start/agent_integrations/claude_code)。
+>
+> **直接使用官方配置即可：**
+> ```powershell
+> $env:ANTHROPIC_BASE_URL="https://api.deepseek.com/anthropic"
+> $env:ANTHROPIC_AUTH_TOKEN="<你的 DeepSeek API Key>"
+> $env:ANTHROPIC_MODEL="deepseek-v4-pro[1m]"
+> $env:ANTHROPIC_DEFAULT_OPUS_MODEL="deepseek-v4-pro[1m]"
+> $env:ANTHROPIC_DEFAULT_SONNET_MODEL="deepseek-v4-pro[1m]"
+> $env:ANTHROPIC_DEFAULT_HAIKU_MODEL="deepseek-v4-flash"
+> $env:CLAUDE_CODE_SUBAGENT_MODEL="deepseek-v4-flash"
+> $env:CLAUDE_CODE_EFFORT_LEVEL="max"
+> ```
+>
+> 本项目作为历史参考保留，记录了从"手搓代理"到"官方适配"的完整过程。
 
-让 [Claude Code](https://claude.ai/code) 通过 [DeepSeek API](https://platform.deepseek.com/) 的 Anthropic 兼容接口工作，附带自动启停管理器。
+---
+
+让 [Claude Code](https://claude.ai/code) 通过 [DeepSeek API](https://platform.deepseek.com/) 的 Anthropic 兼容接口工作。**（已过期，请使用上方官方配置）**
 
 ## 背景
 
