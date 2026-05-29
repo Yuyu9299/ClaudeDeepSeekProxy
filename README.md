@@ -1,5 +1,7 @@
 # ClaudeDeepSeekProxy
 
+> ⚠️ **临时解决方案**：这是一个社区自制的桥接工具，用于在官方适配之前让 Claude Code 与 DeepSeek API 正常通信。如果你不想折腾，可以选择等待 Claude Code 或 DeepSeek 官方的后续更新。喜欢动手的话，往下看 👇
+
 让 [Claude Code](https://claude.ai/code) 通过 [DeepSeek API](https://platform.deepseek.com/) 的 Anthropic 兼容接口工作，附带自动启停管理器。
 
 ## 背景
